@@ -34,7 +34,7 @@ const Modal = ({ reminder, className, setOpen }) => {
     const json = await response.json();
 
     if (json.status === "updated") {
-      window.reload();
+      window.location.reload();
     }
   };
 
