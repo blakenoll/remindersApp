@@ -20,3 +20,7 @@
 ### run npm run serve to build and serve the app: 
 
 ```npm run serve```
+
+### once the app is running vist localhost:8080 where you will be able to sign up / sign in
+
+Reminders can be created by clicking the add reminder button after logging in. You can give it a name and select a date and time you would like to be reminded by text. 
