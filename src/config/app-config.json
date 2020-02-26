@@ -1,0 +1,17 @@
+{
+  "region": "us-west-2",
+  "userPool": "us-west-2_ZrrmfeMJ0",
+  "userPoolBaseUri": "https://blakesreminders.auth.us-west-2.amazoncognito.com",
+  "clientId": "6fsodqvgk8vc4o8g6qacohsrmh",
+  "callbackUri": "http://localhost:8080/callback",
+  "signoutUri": "http://localhost:8080/",
+  "tokenScopes": [
+    "openid",
+    "email",
+    "phone",
+    "aws.cognito.signin.user.admin",
+    "profile",
+    "http://localhost:8080/api.all"
+  ],
+  "apiUri": "http://localhost:8080/"
+}
