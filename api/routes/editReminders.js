@@ -1,8 +1,10 @@
 const client = require("../utils/mongoClient");
 const mongodb = require("mongodb");
 const AWS = require("aws-sdk");
+const awsConfig = require("../AWSconfig");
 
-AWS.config.region = "us-east-1";
+// AWS.config.region = "us-east-1";
+AWS.config = new AWS.Config(awsConfig);
 
 // find and update document use old documents arn to cancel old request
 module.exports = function createReminders(req, res) {

@@ -1,7 +1,9 @@
 const mongoClient = require("../utils/mongoClient");
 const AWS = require("aws-sdk");
+const awsConfig = require("../AWSconfig");
 
-AWS.config.region = "us-east-1";
+// AWS.config.region = "us-east-1";
+AWS.config = new AWS.Config(awsConfig);
 
 module.exports = function createReminders(req, res) {
   const stepfunctions = new AWS.StepFunctions();
